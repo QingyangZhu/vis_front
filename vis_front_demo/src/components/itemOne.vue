@@ -21,13 +21,13 @@ export default {
     function setData() {
       chartData.xData = data.data.chartData.chartData.map((v) => v.title);
       chartData.yData = data.data.chartData.chartData.map((v) => v.num);
-      console.log(chartData.xData, chartData.yData);
+      //console.log(chartData.xData, chartData.yData);
     }
 
     async function getData() {
       let response = await $http({ url: "/one/data" });
       data.data = response.data; // 确保响应式更新
-      console.log(data.data.chartData);
+      //console.log(data.data.chartData);
     }
 
     onMounted(() => {
@@ -106,6 +106,6 @@ export default {
 
 <style>
 .chart{
-  height: 4.5rem;
+  height: 4rem;
 }
 </style>

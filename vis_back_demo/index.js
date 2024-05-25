@@ -17,12 +17,14 @@ let chartOne = require('./router/one');
 let chartTwo = require('./router/two');
 let chartThree = require('./router/three');
 let chartFour = require('./router/four');
+let CRandQR = require('./router/CRandQRRouter');
 
 //使用中间件来配置路由
 app.use('/one', chartOne);
 app.use('/two', chartTwo);
 app.use('/three', chartThree);
 app.use('/four', chartFour);
+app.use('/CRandQRRouter', CRandQR);
 
 //监听端口
 app.listen(8888)

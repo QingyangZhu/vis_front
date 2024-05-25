@@ -1,0 +1,44 @@
+{
+    "2018": [
+        {"company": "蔚来", "quickRatio": "0.99"},
+        {"company": "理想", "quickRatio": "0.30"},
+        {"company": "比亚迪", "quickRatio": "0.72"},
+        {"company": "零跑", "quickRatio": ""},
+        {"company": "小鹏汽车", "quickRatio": "6.28"}
+    ],
+    "2019": [
+        {"company": "蔚来", "quickRatio": "0.28"},
+        {"company": "理想", "quickRatio": "0.46"},
+        {"company": "比亚迪", "quickRatio": "0.63"},
+        {"company": "零跑", "quickRatio": "0.80"},
+        {"company": "小鹏汽车", "quickRatio": "1.50"}
+    ],
+    "2020": [
+        {"company": "蔚来", "quickRatio": "2.40"},
+        {"company": "理想", "quickRatio": "6.45"},
+        {"company": "比亚迪", "quickRatio": "0.81"},
+        {"company": "零跑", "quickRatio": "1.30"},
+        {"company": "小鹏汽车", "quickRatio": "4.79"}
+    ],
+    "2021": [
+        {"company": "蔚来", "quickRatio": "1.94"},
+        {"company": "理想", "quickRatio": "4.01"},
+        {"company": "比亚迪", "quickRatio": "0.72"},
+        {"company": "零跑", "quickRatio": "1.90"},
+        {"company": "小鹏汽车", "quickRatio": "2.43"}
+    ],
+    "2022": [
+        {"company": "蔚来", "quickRatio": "1.13"},
+        {"company": "理想", "quickRatio": "2.22"},
+        {"company": "比亚迪", "quickRatio": "0.52"},
+        {"company": "零跑", "quickRatio": "1.29"},
+        {"company": "小鹏汽车", "quickRatio": "1.58"}
+    ],
+    "2023": [
+        {"company": "蔚来", "quickRatio": ""},
+        {"company": "理想", "quickRatio": "1.32"},
+        {"company": "比亚迪", "quickRatio": ""},
+        {"company": "零跑", "quickRatio": ""},
+        {"company": "小鹏汽车", "quickRatio": ""}
+    ]
+}
