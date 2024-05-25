@@ -25,6 +25,7 @@ export default {
     }
 
     async function getData() {
+      //let response = await $http({ url: "/CRandQRRouter/data" });
       let response = await $http({ url: "/one/data" });
       data.data = response.data; // 确保响应式更新
       //console.log(data.data.chartData);

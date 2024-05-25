@@ -50,14 +50,7 @@
         let chartRatio = $echarts.init(document.getElementById("ratioChart"));
         chartRatio.setOption({
           title: {
-            text: `流动比率和速动比率 (${selectedYear.value})`
-          },
-          grid: {
-            top: "3%",
-            left: "10%",
-            right: "10%",
-            bottom: "3%",
-            containLabel: true
+            //text: `流动比率和速动比率 (${selectedYear.value})`
           },
           tooltip: {
             trigger: 'axis',
@@ -68,32 +61,20 @@
           legend: {
             data: ['流动比率', '速动比率']
           },
-          xAxis: [
-            {
-              type: 'value',
-              position: 'bottom',
-              axisLine: {
-                lineStyle: {
-                  color: "#fff"
-                }
-              },
-              axisLabel: {
-                formatter: '{value}'
-              }
-            },
-            {
-              type: 'value',
-              position: 'bottom',
-              axisLine: {
-                lineStyle: {
-                  color: "#fff"
-                }
-              },
-              axisLabel: {
-                formatter: '{value}'
+          grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+          },
+          xAxis: {
+            type: 'value',
+            axisLine: {
+              lineStyle: {
+                color: "#fff"
               }
             }
-          ],
+          },
           yAxis: {
             type: 'category',
             data: chartData.companies,
@@ -107,34 +88,26 @@
             {
               name: '流动比率',
               type: 'bar',
-              data: chartData.currentRatios,
-              xAxisIndex: 0,
+              label: {
+                show: true,
+                position: 'insideRight'
+              },
               itemStyle: {
-                normal: {
-                  barBorderRadius: [0, 20, 20, 0],
-                  color: new $echarts.graphic.LinearGradient(0, 0, 1, 0, [
-                    { offset: 0, color: "#005eaa" },
-                    { offset: 0.5, color: "#339ca8" },
-                    { offset: 1, color: "#cda819" }
-                  ])
-                }
-              }
+                color: '#339ca8'
+              },
+              data: chartData.currentRatios
             },
             {
               name: '速动比率',
               type: 'bar',
-              data: chartData.quickRatios,
-              xAxisIndex: 1,
+              label: {
+                show: true,
+                position: 'insideRight'
+              },
               itemStyle: {
-                normal: {
-                  barBorderRadius: [20, 0, 0, 20],
-                  color: new $echarts.graphic.LinearGradient(1, 0, 0, 0, [
-                    { offset: 0, color: "#ff4500" },
-                    { offset: 0.5, color: "#ff8c00" },
-                    { offset: 1, color: "#ffd700" }
-                  ])
-                }
-              }
+                color: '#cda819'
+              },
+              data: chartData.quickRatios
             }
           ]
         });
@@ -158,7 +131,7 @@
   
   <style>
   .chart {
-    height: 500px;
+    height: 4rem;
     width: 100%;
   }
   select {
