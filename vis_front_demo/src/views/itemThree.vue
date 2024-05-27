@@ -14,13 +14,12 @@
   </template>
   
   <script>
-  import { ref, reactive, onMounted, inject } from 'vue';
+  import { ref, reactive, onMounted } from 'vue';
+  import axios from 'axios';
+  import * as echarts from 'echarts';
   
   export default {
     setup() {
-      const echarts = inject('echarts');
-      const axios = inject('axios');
-  
       const selectedAttribute = ref('totalAssetTurnover');
       const chart = ref(null);
   
@@ -97,12 +96,6 @@
             trigger: 'item',
             formatter: function (params) {
               return `${params.seriesName}<br/>${years[params.data[0]]}: ${params.data[1]}`;
-            }
-          },
-          legend: {
-            data: companies,
-            textStyle: {
-              color: '#fff'
             }
           },
           xAxis: {

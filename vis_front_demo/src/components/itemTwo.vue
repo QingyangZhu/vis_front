@@ -34,7 +34,7 @@
         chartData.companies = data.CRData.map(v => v.company);
         chartData.currentRatios = data.CRData.map(v => parseFloat(v.currentRatio) || 0);
         chartData.quickRatios = data.QRData.map(v => parseFloat(v.quickRatio) || 0);
-        console.log(chartData.companies, chartData.currentRatios, chartData.quickRatios);
+        //console.log(chartData.companies, chartData.currentRatios, chartData.quickRatios);
       }
   
       async function getData() {
@@ -135,7 +135,7 @@
     width: 100%;
   }
   select {
-    margin-bottom: 20px;
+    margin-bottom: .125rem;
   }
   </style>
   

@@ -1,0 +1,44 @@
+{
+    "2018": [
+        {"company": "蔚来", "inventoryTurnover": "1.25"},
+        {"company": "理想", "inventoryTurnover": "0.46"},
+        {"company": "比亚迪", "inventoryTurnover": "6.64"},
+        {"company": "零跑", "inventoryTurnover": ""},
+        {"company": "小鹏汽车", "inventoryTurnover": "3.57"}
+    ],
+    "2019": [
+        {"company": "蔚来", "inventoryTurnover": "5.41"},
+        {"company": "理想", "inventoryTurnover": "0.50"},
+        {"company": "比亚迪", "inventoryTurnover": "5.34"},
+        {"company": "零跑", "inventoryTurnover": "1.39"},
+        {"company": "小鹏汽车", "inventoryTurnover": "1.83"}
+    ],
+    "2020": [
+        {"company": "蔚来", "inventoryTurnover": "4.49"},
+        {"company": "理想", "inventoryTurnover": "2.23"},
+        {"company": "比亚迪", "inventoryTurnover": "4.46"},
+        {"company": "零跑", "inventoryTurnover": "2.54"},
+        {"company": "小鹏汽车", "inventoryTurnover": "2.79"}
+    ],
+    "2021": [
+        {"company": "蔚来", "inventoryTurnover": "6.65"},
+        {"company": "理想", "inventoryTurnover": "3.86"},
+        {"company": "比亚迪", "inventoryTurnover": "5.22"},
+        {"company": "零跑", "inventoryTurnover": "5.55"},
+        {"company": "小鹏汽车", "inventoryTurnover": "4.64"}
+    ],
+    "2022": [
+        {"company": "蔚来", "inventoryTurnover": "6.08"},
+        {"company": "理想", "inventoryTurnover": "4.57"},
+        {"company": "比亚迪", "inventoryTurnover": "6.39"},
+        {"company": "零跑", "inventoryTurnover": "4.20"},
+        {"company": "小鹏汽车", "inventoryTurnover": "4.85"}
+    ],
+    "2023": [
+        {"company": "蔚来", "inventoryTurnover": ""},
+        {"company": "理想", "inventoryTurnover": "5.13"},
+        {"company": "比亚迪", "inventoryTurnover": ""},
+        {"company": "零跑", "inventoryTurnover": ""},
+        {"company": "小鹏汽车", "inventoryTurnover": ""}
+    ]
+}
