@@ -1,112 +1,98 @@
 <template>
   <div>
-    <h2>图1</h2>
-    <div class="chart" id="oneChart"></div>
+    <h2>资产负债率变化情况</h2>
+    <div class="chart" id="debtToAssetRatioChart"></div>
   </div>
 </template>
 
 <script>
 import { inject, onMounted, reactive } from "vue";
+
 export default {
   setup() {
     let $echarts = inject("echarts");
     let $http = inject("axios");
 
-    let data = reactive({}); // 变量
+    let data = reactive({ DARData: {} });
     let chartData = reactive({
-      xData: [],
-      yData: [],
+      years: [],
+      series: []
     });
 
     function setData() {
-      chartData.xData = data.data.chartData.chartData.map((v) => v.title);
-      chartData.yData = data.data.chartData.chartData.map((v) => v.num);
-      //console.log(chartData.xData, chartData.yData);
+      const companies = ["蔚来", "理想", "比亚迪", "零跑", "小鹏汽车"];
+      const years = ["2018", "2019", "2020", "2021", "2022", "2023"];
+      chartData.years = years;
+
+      chartData.series = companies.map(company => {
+        return {
+          name: company,
+          type: 'line',
+          data: years.map(year => {
+            const yearData = data.DARData[year].find(item => item.company === company);
+            return yearData ? parseFloat(yearData.debtToAssetRatio) || null : null;
+          })
+        };
+      });
     }
 
     async function getData() {
-      //let response = await $http({ url: "/CRandQRRouter/data" });
-      let response = await $http({ url: "/one/data" });
-      data.data = response.data; // 确保响应式更新
-      //console.log(data.data.chartData);
+      let response = await $http({ url: "/DARRouter/data" });
+      data.DARData = response.data.DARData;
+      setData();
     }
 
     onMounted(() => {
-        let chartOne = $echarts.init(document.getElementById("oneChart"));
-      // 获取数据
+      let chart = $echarts.init(document.getElementById("debtToAssetRatioChart"));
       getData().then(() => {
-        
-        // 等先获取数据之后再处理数据
-        setData();
-        // 生命周期钩子中直接调用echarts的初始化方法等
-        
-        chartOne.setOption({
-          grid:{
-            top:"3%",
-            left:"1%",
-            right:"6%",
-            bottom:"3%",
-            containLabel:true
-
+        chart.setOption({
+          tooltip: {
+            trigger: 'axis',
+            axisPointer: {
+              type: 'cross'
+            }
+          },
+          legend: {
+            data: ["蔚来", "理想", "比亚迪", "零跑", "小鹏汽车"],
+            textStyle: {
+              color: '#fff'
+            }
           },
           xAxis: {
-            type: "value",
-            axisLine:{
-              lineStyle:{
-                color:"#fff"
+            type: 'category',
+            boundaryGap: false,
+            data: chartData.years,
+            axisLine: {
+              lineStyle: {
+                color: "#fff"
               }
             }
           },
           yAxis: {
-            type: "category",
-            data: chartData.xData,
-             axisLine:{
-              lineStyle:{
-                color:"#fff"
+            type: 'value',
+            axisLine: {
+              lineStyle: {
+                color: "#fff"
               }
             }
           },
-          series: [
-            {
-              data: chartData.yData,
-              type: "bar",
-              itemStyle: {
-                normal: {
-                  barBorderRadius:[0,20,20,0],
-                  color: new $echarts.graphic.LinearGradient(0, 0, 1, 0, [
-                    {
-                      offset: 0,
-                      color: "#005eaa",
-                    },
-                    {
-                      offset: 0.5,
-                      color: "#339ca8",
-                    },
-                    {
-                      offset: 1,
-                      color: "#cda819",
-                    },
-                  ]),
-                },
-              },
-            },
-          ],
+          series: chartData.series
         });
       });
     });
 
     return {
-      getData,
       data,
       chartData,
-      setData,
+      getData
     };
-  },
+  }
 };
 </script>
 
 <style>
-.chart{
-  height: 4rem;
+.chart {
+  height: 400px;
+  width: 100%;
 }
 </style>
