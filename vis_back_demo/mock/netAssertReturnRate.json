@@ -1,0 +1,44 @@
+{
+    "2018": [
+        {"company": "蔚来", "netAssetReturnRate": -64.9},
+        {"company": "理想", "netAssetReturnRate": -26.51},
+        {"company": "比亚迪", "netAssetReturnRate": 1.46},
+        {"company": "零跑", "netAssetReturnRate": null},
+        {"company": "小鹏汽车", "netAssetReturnRate": -18.23}
+    ],
+    "2019": [
+        {"company": "蔚来", "netAssetReturnRate": -67.57},
+        {"company": "理想", "netAssetReturnRate": -31.64},
+        {"company": "比亚迪", "netAssetReturnRate": 0.82},
+        {"company": "零跑", "netAssetReturnRate": -36.98},
+        {"company": "小鹏汽车", "netAssetReturnRate": -43.22}
+    ],
+    "2020": [
+        {"company": "蔚来", "netAssetReturnRate": -16.44},
+        {"company": "理想", "netAssetReturnRate": -0.64},
+        {"company": "比亚迪", "netAssetReturnRate": 2.2},
+        {"company": "零跑", "netAssetReturnRate": -39.58},
+        {"company": "小鹏汽车", "netAssetReturnRate": -10.23}
+    ],
+    "2021": [
+        {"company": "蔚来", "netAssetReturnRate": -15.54},
+        {"company": "理想", "netAssetReturnRate": -0.66},
+        {"company": "比亚迪", "netAssetReturnRate": 1.24},
+        {"company": "零跑", "netAssetReturnRate": -36.27},
+        {"company": "小鹏汽车", "netAssetReturnRate": -8.93}
+    ],
+    "2022": [
+        {"company": "蔚来", "netAssetReturnRate": -15.57},
+        {"company": "理想", "netAssetReturnRate": -2.61},
+        {"company": "比亚迪", "netAssetReturnRate": 4.06},
+        {"company": "零跑", "netAssetReturnRate": -30.96},
+        {"company": "小鹏汽车", "netAssetReturnRate": -12.74}
+    ],
+    "2023": [
+        {"company": "理想", "netAssetReturnRate": 10.1},
+        {"company": "蔚来", "netAssetReturnRate": null},
+        {"company": "比亚迪", "netAssetReturnRate": null},
+        {"company": "零跑", "netAssetReturnRate": null},
+        {"company": "小鹏汽车", "netAssetReturnRate": null}
+    ]
+}
