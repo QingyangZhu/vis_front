@@ -1,0 +1,44 @@
+{
+    "2018": [
+        {"company": "蔚来", "salesGrowthRate": null},
+        {"company": "理想", "salesGrowthRate": null},
+        {"company": "比亚迪", "salesGrowthRate": 0.18},
+        {"company": "零跑", "salesGrowthRate": null},
+        {"company": "小鹏汽车", "salesGrowthRate": null}
+    ],
+    "2019": [
+        {"company": "蔚来", "salesGrowthRate": 0.34},
+        {"company": "理想", "salesGrowthRate": null},
+        {"company": "比亚迪", "salesGrowthRate": -0.04},
+        {"company": "零跑", "salesGrowthRate": null},
+        {"company": "小鹏汽车", "salesGrowthRate": null}
+    ],
+    "2020": [
+        {"company": "蔚来", "salesGrowthRate": 0.51},
+        {"company": "理想", "salesGrowthRate": 34.43},
+        {"company": "比亚迪", "salesGrowthRate": 0.31},
+        {"company": "零跑", "salesGrowthRate": 0.83},
+        {"company": "小鹏汽车", "salesGrowthRate": 0.83}
+    ],
+    "2021": [
+        {"company": "蔚来", "salesGrowthRate": 0.54},
+        {"company": "理想", "salesGrowthRate": 1.95},
+        {"company": "比亚迪", "salesGrowthRate": 0.43},
+        {"company": "零跑", "salesGrowthRate": 0.8},
+        {"company": "小鹏汽车", "salesGrowthRate": 0.8}
+    ],
+    "2022": [
+        {"company": "蔚来", "salesGrowthRate": 0.27},
+        {"company": "理想", "salesGrowthRate": 0.53},
+        {"company": "比亚迪", "salesGrowthRate": 0.79},
+        {"company": "零跑", "salesGrowthRate": 0.72},
+        {"company": "小鹏汽车", "salesGrowthRate": 0.72}
+    ],
+    "2023": [
+        {"company": "理想", "salesGrowthRate": 1.68},
+        {"company": "蔚来", "salesGrowthRate": null},
+        {"company": "比亚迪", "salesGrowthRate": null},
+        {"company": "零跑", "salesGrowthRate": null},
+        {"company": "小鹏汽车", "salesGrowthRate": null}
+    ]
+}

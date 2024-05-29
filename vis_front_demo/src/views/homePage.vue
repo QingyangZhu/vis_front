@@ -74,12 +74,12 @@ h1{
 }
 /* 设置左右容器的份数 */
 .left-container{
-  flex: 3;
+  flex: 2.5;
   border: 1px solid #ff0000;
   background-color: rgba(255,0,0,.2);
 }
 .right-container{
-  flex: 3;
+  flex: 2.5;
   border: 1px solid #ff0000;
   background-color: rgba(0,255,0,.2);
 }

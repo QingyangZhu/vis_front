@@ -17,6 +17,7 @@ let chartOne = require('./router/one');
 let chartTwo = require('./router/two');
 let chartThree = require('./router/three');
 let chartFour = require('./router/four');
+let chartFive = require('./router/five');
 let CRandQR = require('./router/CRandQRRouter');
 let DAR = require('./router/DARRouter');
 
@@ -25,6 +26,7 @@ app.use('/one', chartOne);
 app.use('/two', chartTwo);
 app.use('/three', chartThree);
 app.use('/four', chartFour);
+app.use('/five', chartFive);
 app.use('/CRandQRRouter', CRandQR);
 app.use('/DARRouter', DAR);
 

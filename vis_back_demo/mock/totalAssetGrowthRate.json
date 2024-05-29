@@ -1,0 +1,44 @@
+{
+    "2018": [
+        {"company": "蔚来", "totalAssetGrowthRate": null},
+        {"company": "理想", "totalAssetGrowthRate": null},
+        {"company": "比亚迪", "totalAssetGrowthRate": 0.053},
+        {"company": "零跑", "totalAssetGrowthRate": null},
+        {"company": "小鹏汽车", "totalAssetGrowthRate": null}
+    ],
+    "2019": [
+        {"company": "蔚来", "totalAssetGrowthRate": -0.24},
+        {"company": "理想", "totalAssetGrowthRate": 0.61},
+        {"company": "比亚迪", "totalAssetGrowthRate": -0.02},
+        {"company": "零跑", "totalAssetGrowthRate": null},
+        {"company": "小鹏汽车", "totalAssetGrowthRate": 0.21}
+    ],
+    "2020": [
+        {"company": "蔚来", "totalAssetGrowthRate": 2.99},
+        {"company": "理想", "totalAssetGrowthRate": 3.07},
+        {"company": "比亚迪", "totalAssetGrowthRate": 0.09},
+        {"company": "零跑", "totalAssetGrowthRate": 0.3},
+        {"company": "小鹏汽车", "totalAssetGrowthRate": 3.83}
+    ],
+    "2021": [
+        {"company": "蔚来", "totalAssetGrowthRate": 0.56},
+        {"company": "理想", "totalAssetGrowthRate": 0.76},
+        {"company": "比亚迪", "totalAssetGrowthRate": 0.52},
+        {"company": "零跑", "totalAssetGrowthRate": 0.75},
+        {"company": "小鹏汽车", "totalAssetGrowthRate": 0.47}
+    ],
+    "2022": [
+        {"company": "蔚来", "totalAssetGrowthRate": 0.07},
+        {"company": "理想", "totalAssetGrowthRate": 0.28},
+        {"company": "比亚迪", "totalAssetGrowthRate": 0.52},
+        {"company": "零跑", "totalAssetGrowthRate": 0.29},
+        {"company": "小鹏汽车", "totalAssetGrowthRate": 0.09}
+    ],
+    "2023": [
+        {"company": "理想", "totalAssetGrowthRate": 0.62},
+        {"company": "蔚来", "totalAssetGrowthRate": null},
+        {"company": "比亚迪", "totalAssetGrowthRate": null},
+        {"company": "零跑", "totalAssetGrowthRate": null},
+        {"company": "小鹏汽车", "totalAssetGrowthRate": null}
+    ]
+}

@@ -1,9 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
-import EchartsDemo from '@/components/EchartsDemo'
-import App from '@/App'
-import HomePage from '../views/homePage.vue'
 
 
 Vue.use(Router)
