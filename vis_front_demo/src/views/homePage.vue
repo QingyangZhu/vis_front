@@ -16,7 +16,9 @@
 
       <!-- 中容器 -->
       <section class="mid-container">
-        <MidItemPage><ItemMid></ItemMid>
+        <MidItemPage>
+          <ItemMidUp></ItemMidUp>
+          <ItemMid></ItemMid>
         </MidItemPage>
       </section>
 
@@ -43,11 +45,12 @@ import ItemThree from "@/components/itemThree.vue";
 import ItemFour from "@/components/itemFour.vue";
 import ItemMid from "@/components/itemMid.vue";
 import MidItemPage from "@/components/midItemPage.vue";
+import ItemMidUp from '@/components/itemMidUp.vue';
 
 
 export default {
   components: {
-    ItemPage,ItemOne,ItemTwo,ItemThree,ItemFour,ItemMid,MidItemPage,
+    ItemPage,ItemOne,ItemTwo,ItemThree,ItemFour,ItemMid,MidItemPage,ItemMidUp
   },
   
   

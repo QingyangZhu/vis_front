@@ -1,6 +1,7 @@
 <template>
-  <div class="containerMid">
-    <h2>公司财务增长数据</h2>
+  <div>
+    <h2>销售增长率、 净利润增长率、总资产增长率变化情况</h2>
+    <div class="containerMid">
     <div class="sidebar">
       <button v-for="company in companies" :key="company" @click="changeCompany(company)">
         {{ company }}
@@ -10,6 +11,8 @@
       <div class="chartMid" ref="chartMid"></div>
     </div>
   </div>
+  </div>
+  
 </template>
 
 <script>
@@ -53,6 +56,16 @@ export default {
 
     const updateChart = ({years, salesGrowth, netProfitGrowth, totalAssetGrowth}) => {
       const options = {
+        tooltip: {
+          trigger: 'axis',
+          axisPointer: {
+            type: 'shadow'
+          },
+          formatter: function (params) {
+            return `${params[0].name}年:<br/>` +
+                   `${params.map(item => `${item.seriesName}: ${item.value || '无数据'}`).join('<br/>')}`;
+          }
+        },
         angleAxis: {
           type: 'category',
           data: years,
@@ -142,7 +155,7 @@ export default {
   padding: .125rem;
 }
 .chartContainer {
-  margin-top:.25rem;
+  margin-top:.125rem;
   flex: 3;
 }
 .chartMid {
