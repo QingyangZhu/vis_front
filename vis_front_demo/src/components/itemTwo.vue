@@ -4,7 +4,7 @@
       <select v-model="selectedYear" @change="getData">
         <option v-for="year in years" :key="year" :value="year">{{ year }}</option>
       </select>
-      <div class="chart" id="ratioChart"></div>
+      <div class="chartTwo" id="ratioChart"></div>
     </div>
   </template>
   
@@ -130,7 +130,7 @@
   </script>
   
   <style>
-  .chart {
+  .chartTwo {
     height: 4rem;
     width: 100%;
   }

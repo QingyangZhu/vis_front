@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2>资产负债率变化情况</h2>
-    <div class="chart" id="debtToAssetRatioChart"></div>
+    <div class="chartOne" id="debtToAssetRatioChart"></div>
   </div>
 </template>
 
@@ -91,8 +91,8 @@ export default {
 </script>
 
 <style>
-.chart {
-  height: 400px;
+.chartOne {
+  height: 4rem;
   width: 100%;
 }
 </style>

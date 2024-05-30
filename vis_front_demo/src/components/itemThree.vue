@@ -9,7 +9,7 @@
           <option value="receivablesTurnover">应收账款周转率</option>
         </select>
       </div>
-      <div class="chart" id="bubbleChart"></div>
+      <div class="chartThree" id="bubbleChart"></div>
     </div>
   </template>
   
@@ -145,13 +145,13 @@
   </script>
   
   <style>
-  .chart {
-    height: 400px;
+  .chartThree {
+    height: 4rem;
     width: 100%;
-    margin-top: 20px;
+    margin-top: .125rem;
   }
   select {
-    margin-bottom: 20px;
+    margin-bottom: .125rem;
   }
   </style>
   

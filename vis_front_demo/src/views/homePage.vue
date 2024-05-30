@@ -16,7 +16,8 @@
 
       <!-- 中容器 -->
       <section class="mid-container">
-        33333333333
+        <MidItemPage><ItemMid></ItemMid>
+        </MidItemPage>
       </section>
 
       <!-- 右容器 -->
@@ -40,15 +41,15 @@ import ItemOne from "@/components/itemOne.vue";
 import ItemTwo from "@/components/itemTwo.vue";
 import ItemThree from "@/components/itemThree.vue";
 import ItemFour from "@/components/itemFour.vue";
+import ItemMid from "@/components/itemMid.vue";
+import MidItemPage from "@/components/midItemPage.vue";
 
-import { inject} from 'vue';
+
 export default {
   components: {
-    ItemPage,ItemOne,ItemTwo,ItemThree,ItemFour,
+    ItemPage,ItemOne,ItemTwo,ItemThree,ItemFour,ItemMid,MidItemPage,
   },
-  setup() {
-    
-  },
+  
   
 }
 </script>

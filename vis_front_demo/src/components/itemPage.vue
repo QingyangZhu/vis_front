@@ -13,9 +13,9 @@ export default {
 
 <style>
 .item{
-  height: 5.125rem;
+  height: 5rem;
   border: 1px solid blue;
-  margin: .25rem;
+  margin: .15rem;
   background-color: rgba(12,130,255,.85);
 }
 
