@@ -20,6 +20,7 @@ let chartFour = require('./router/four');
 let chartFive = require('./router/five');
 let CRandQR = require('./router/CRandQRRouter');
 let DAR = require('./router/DARRouter');
+let mid = require('./router/mid');
 
 //使用中间件来配置路由
 app.use('/one', chartOne);
@@ -29,6 +30,7 @@ app.use('/four', chartFour);
 app.use('/five', chartFive);
 app.use('/CRandQRRouter', CRandQR);
 app.use('/DARRouter', DAR);
+app.use('/mid', mid);
 
 //监听端口
 app.listen(8888)

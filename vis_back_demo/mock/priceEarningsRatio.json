@@ -1,0 +1,44 @@
+{
+    "2018": [
+        {"company": "蔚来", "priceEarningsRatio": null},
+        {"company": "理想", "priceEarningsRatio": null},
+        {"company": "比亚迪", "priceEarningsRatio": 54.84},
+        {"company": "零跑", "priceEarningsRatio": null},
+        {"company": "小鹏汽车", "priceEarningsRatio": null}
+    ],
+    "2019": [
+        {"company": "蔚来", "priceEarningsRatio": null},
+        {"company": "理想", "priceEarningsRatio": null},
+        {"company": "比亚迪", "priceEarningsRatio": 95.34},
+        {"company": "零跑", "priceEarningsRatio": null},
+        {"company": "小鹏汽车", "priceEarningsRatio": null}
+    ],
+    "2020": [
+        {"company": "蔚来", "priceEarningsRatio": null},
+        {"company": "理想", "priceEarningsRatio": null},
+        {"company": "比亚迪", "priceEarningsRatio": 132.18},
+        {"company": "零跑", "priceEarningsRatio": null},
+        {"company": "小鹏汽车", "priceEarningsRatio": null}
+    ],
+    "2021": [
+        {"company": "蔚来", "priceEarningsRatio": null},
+        {"company": "理想", "priceEarningsRatio": null},
+        {"company": "比亚迪", "priceEarningsRatio": 252.94},
+        {"company": "零跑", "priceEarningsRatio": null},
+        {"company": "小鹏汽车", "priceEarningsRatio": null}
+    ],
+    "2022": [
+        {"company": "蔚来", "priceEarningsRatio": null},
+        {"company": "理想", "priceEarningsRatio": null},
+        {"company": "比亚迪", "priceEarningsRatio": 45},
+        {"company": "零跑", "priceEarningsRatio": null},
+        {"company": "小鹏汽车", "priceEarningsRatio": null}
+    ],
+    "2023": [
+        {"company": "理想", "priceEarningsRatio": 24.07},
+        {"company": "蔚来", "priceEarningsRatio": null},
+        {"company": "比亚迪", "priceEarningsRatio": null},
+        {"company": "零跑", "priceEarningsRatio": null},
+        {"company": "小鹏汽车", "priceEarningsRatio": null}
+    ]
+}
