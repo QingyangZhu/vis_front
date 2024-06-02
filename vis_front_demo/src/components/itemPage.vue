@@ -17,6 +17,7 @@ export default {
   border: 1px solid blue;
   margin: .15rem;
   background-color: rgba(12,130,255,.85);
+  /* background-color: rgba(19, 117, 215, 0.551); */
 }
 
 </style>

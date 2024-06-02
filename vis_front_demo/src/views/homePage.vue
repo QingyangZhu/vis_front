@@ -1,7 +1,8 @@
 <template>
   <div>
     <header>
-      <h1>会计信息可视化分析平台</h1>
+      <h1>会计信息可视化分析系统</h1>
+      <!-- <a-button type="primary">Click Me</a-button> -->
     </header>
     <section class="container">
       <!-- 左容器 -->
@@ -69,31 +70,35 @@ h1{
   line-height: 1rem;
   text-align: center;
 }
+h2{
+  color: #fff;
+}
 .container{
   min-width: 1200px;
   max-width: 2048px;
   margin: 0 auto;
-  padding: 0.125rem 0.125rem 0;
+  /* padding: 0.125rem 0.125rem 0; */
+  padding: 0 0 0;
   display: flex;
 }
 /* 设置左右容器的份数 */
 .left-container{
   flex: 2.5;
-  border: 1px solid #ff0000;
-  background-color: rgba(255,0,0,.2);
+  /* border: 1px solid #ff0000; */
+  /* background-color: rgba(255,0,0,.2); */
 }
 .right-container{
   flex: 2.5;
-  border: 1px solid #ff0000;
-  background-color: rgba(0,255,0,.2);
+  /* border: 1px solid #ff0000; */
+  /* background-color: rgba(0,255,0,.2); */
 }
 .mid-container{
   flex: 5;
-  border: 1px solid #ff0000;
-  background-color: rgba(0,0,255,.2);
+  /* border: 1px solid #ff0000; */
+  /* background-color: rgba(0,0,255,.2); */
   height: 10.5rem;
-  padding: 0.125rem;
-  margin: 0.125rem;
+  /* padding: 0.125rem; */
+  margin: 0;
 }
 
 </style>

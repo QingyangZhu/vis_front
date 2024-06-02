@@ -3,9 +3,9 @@
     <h2>销售增长率、 净利润增长率、总资产增长率变化情况</h2>
     <div class="containerMid">
     <div class="sidebar">
-      <button v-for="company in companies" :key="company" @click="changeCompany(company)">
+      <a-button type="dashed" v-for="company in companies" :key="company" @click="changeCompany(company)">
         {{ company }}
-      </button>
+      </a-button>
     </div>
     <div class="chartContainer">
       <div class="chartMid" ref="chartMid"></div>

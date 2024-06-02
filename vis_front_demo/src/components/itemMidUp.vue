@@ -3,13 +3,14 @@
         <h2>市盈率、市净率、市销率、 股息率变化情况</h2>
         <div class="containerMidUP">
     <div class="sidebarMidUP">
-      <button
+      <a-button
+      type="dashed"
         v-for="company in companies"
         :key="company"
         @click="changeCompany(company)"
       >
         {{ company }}
-      </button>
+      </a-button>
     </div>
     <div class="chartContainerMidUP">
       <div class="chartMidUP" ref="chartMidUP"></div>
