@@ -23,5 +23,6 @@ export default {
 <style>
 body{
   background: url(~@/assets/bg.png) top center no-repeat;
+  background-size: cover;
 }
 </style>
