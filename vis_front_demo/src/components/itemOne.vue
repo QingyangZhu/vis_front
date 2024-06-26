@@ -92,7 +92,7 @@ export default {
 
 <style>
 .chartOne {
-  height: 4rem;
+  height: 4.5rem;
   width: 100%;
 }
 </style>
