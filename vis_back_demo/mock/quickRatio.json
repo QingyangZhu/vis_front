@@ -1,44 +1,44 @@
 {
     "2018": [
-        {"company": "蔚来", "quickRatio": "1.25"},
-        {"company": "理想", "quickRatio": "1.26"},
-        {"company": "比亚迪", "quickRatio": "0.76"},
-        {"company": "零跑", "quickRatio": ""},
-        {"company": "小鹏汽车", "quickRatio": "6.1"}
+        {"company": "A", "quickRatio": "1.25"},
+        {"company": "B", "quickRatio": "1.26"},
+        {"company": "C", "quickRatio": "0.76"},
+        {"company": "D", "quickRatio": ""},
+        {"company": "E", "quickRatio": "6.1"}
     ],
     "2019": [
-        {"company": "蔚来", "quickRatio": "0.43"},
-        {"company": "理想", "quickRatio": "0.87"},
-        {"company": "比亚迪", "quickRatio": "0.75"},
-        {"company": "零跑", "quickRatio": "0.81"},
-        {"company": "小鹏汽车", "quickRatio": "1.37"}
+        {"company": "A", "quickRatio": "0.43"},
+        {"company": "B", "quickRatio": "0.87"},
+        {"company": "C", "quickRatio": "0.75"},
+        {"company": "D", "quickRatio": "0.81"},
+        {"company": "E", "quickRatio": "1.37"}
     ],
     "2020": [
-        {"company": "蔚来", "quickRatio": "3.23"},
-        {"company": "理想", "quickRatio": "6.72"},
-        {"company": "比亚迪", "quickRatio": "0.75"},
-        {"company": "零跑", "quickRatio": "1.9"},
-        {"company": "小鹏汽车", "quickRatio": "4.89"}
+        {"company": "A", "quickRatio": "3.23"},
+        {"company": "B", "quickRatio": "6.72"},
+        {"company": "C", "quickRatio": "0.75"},
+        {"company": "D", "quickRatio": "1.9"},
+        {"company": "E", "quickRatio": "4.89"}
     ],
     "2021": [
-        {"company": "蔚来", "quickRatio": "2.11"},
-        {"company": "理想", "quickRatio": "3.93"},
-        {"company": "比亚迪", "quickRatio": "0.72"},
-        {"company": "零跑", "quickRatio": "1.28"},
-        {"company": "小鹏汽车", "quickRatio": "2.56"}
+        {"company": "A", "quickRatio": "2.11"},
+        {"company": "B", "quickRatio": "3.93"},
+        {"company": "C", "quickRatio": "0.72"},
+        {"company": "D", "quickRatio": "1.28"},
+        {"company": "E", "quickRatio": "2.56"}
     ],
     "2022": [
-        {"company": "蔚来", "quickRatio": "1.11"},
-        {"company": "理想", "quickRatio": "2.07"},
-        {"company": "比亚迪", "quickRatio": "0.49"},
-        {"company": "零跑", "quickRatio": "1.47"},
-        {"company": "小鹏汽车", "quickRatio": "1.62"}
+        {"company": "A", "quickRatio": "1.11"},
+        {"company": "B", "quickRatio": "2.07"},
+        {"company": "C", "quickRatio": "0.49"},
+        {"company": "D", "quickRatio": "1.47"},
+        {"company": "E", "quickRatio": "1.62"}
     ],
     "2023": [
-        {"company": "蔚来", "quickRatio": ""},
-        {"company": "理想", "quickRatio": "1.42"},
-        {"company": "比亚迪", "quickRatio": ""},
-        {"company": "零跑", "quickRatio": ""},
-        {"company": "小鹏汽车", "quickRatio": ""}
+        {"company": "A", "quickRatio": ""},
+        {"company": "B", "quickRatio": "1.42"},
+        {"company": "C", "quickRatio": ""},
+        {"company": "D", "quickRatio": ""},
+        {"company": "E", "quickRatio": ""}
     ]
 }

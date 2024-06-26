@@ -1,44 +1,44 @@
 {
     "2018": [
-        {"company": "蔚来", "priceSalesRatio": 2.94},
-        {"company": "理想", "priceSalesRatio": null},
-        {"company": "比亚迪", "priceSalesRatio": 1.17},
-        {"company": "零跑", "priceSalesRatio": null},
-        {"company": "小鹏汽车", "priceSalesRatio": null}
+        {"company": "A", "priceSalesRatio": 2.94},
+        {"company": "B", "priceSalesRatio": null},
+        {"company": "C", "priceSalesRatio": 1.17},
+        {"company": "D", "priceSalesRatio": null},
+        {"company": "E", "priceSalesRatio": null}
     ],
     "2019": [
-        {"company": "蔚来", "priceSalesRatio": 3.71},
-        {"company": "理想", "priceSalesRatio": null},
-        {"company": "比亚迪", "priceSalesRatio": 1.2},
-        {"company": "零跑", "priceSalesRatio": null},
-        {"company": "小鹏汽车", "priceSalesRatio": null}
+        {"company": "A", "priceSalesRatio": 3.71},
+        {"company": "B", "priceSalesRatio": null},
+        {"company": "C", "priceSalesRatio": 1.2},
+        {"company": "D", "priceSalesRatio": null},
+        {"company": "E", "priceSalesRatio": null}
     ],
     "2020": [
-        {"company": "蔚来", "priceSalesRatio": 23.19},
-        {"company": "理想", "priceSalesRatio": 8.67},
-        {"company": "比亚迪", "priceSalesRatio": 3.57},
-        {"company": "零跑", "priceSalesRatio": null},
-        {"company": "小鹏汽车", "priceSalesRatio": 18.07}
+        {"company": "A", "priceSalesRatio": 23.19},
+        {"company": "B", "priceSalesRatio": 8.67},
+        {"company": "C", "priceSalesRatio": 3.57},
+        {"company": "D", "priceSalesRatio": null},
+        {"company": "E", "priceSalesRatio": 18.07}
     ],
     "2021": [
-        {"company": "蔚来", "priceSalesRatio": 8.78},
-        {"company": "理想", "priceSalesRatio": 7.01},
-        {"company": "比亚迪", "priceSalesRatio": 3.56},
-        {"company": "零跑", "priceSalesRatio": null},
-        {"company": "小鹏汽车", "priceSalesRatio": 12.55}
+        {"company": "A", "priceSalesRatio": 8.78},
+        {"company": "B", "priceSalesRatio": 7.01},
+        {"company": "C", "priceSalesRatio": 3.56},
+        {"company": "D", "priceSalesRatio": null},
+        {"company": "E", "priceSalesRatio": 12.55}
     ],
     "2022": [
-        {"company": "蔚来", "priceSalesRatio": 2.26},
-        {"company": "理想", "priceSalesRatio": 3.05},
-        {"company": "比亚迪", "priceSalesRatio": 1.76},
-        {"company": "零跑", "priceSalesRatio": 2.28},
-        {"company": "小鹏汽车", "priceSalesRatio": 2.21}
+        {"company": "A", "priceSalesRatio": 2.26},
+        {"company": "B", "priceSalesRatio": 3.05},
+        {"company": "C", "priceSalesRatio": 1.76},
+        {"company": "D", "priceSalesRatio": 2.28},
+        {"company": "E", "priceSalesRatio": 2.21}
     ],
     "2023": [
-        {"company": "理想", "priceSalesRatio": 2.28},
-        {"company": "蔚来", "priceSalesRatio": null},
-        {"company": "比亚迪", "priceSalesRatio": null},
-        {"company": "零跑", "priceSalesRatio": null},
-        {"company": "小鹏汽车", "priceSalesRatio": null}
+        {"company": "B", "priceSalesRatio": 2.28},
+        {"company": "A", "priceSalesRatio": null},
+        {"company": "C", "priceSalesRatio": null},
+        {"company": "D", "priceSalesRatio": null},
+        {"company": "E", "priceSalesRatio": null}
     ]
 }

@@ -31,11 +31,11 @@
       });
   
       const companyColors = {
-        '蔚来': '#ff0000',
-        '理想': '#00ff00',
-        '比亚迪': '#0000ff',
-        '零跑': '#ffff00',
-        '小鹏汽车': '#ff00ff'
+        'A': '#ff0000',
+        'B': '#00ff00',
+        'C': '#0000ff',
+        'D': '#ffff00',
+        'E': '#ff00ff'
       };
   
       const getData = async () => {

@@ -1,44 +1,44 @@
 {
     "2018": [
-        {"company": "蔚来", "dividendYield": 1.2},
-        {"company": "理想", "dividendYield": 0},
-        {"company": "比亚迪", "dividendYield": 0.35},
-        {"company": "零跑", "dividendYield": null},
-        {"company": "小鹏汽车", "dividendYield": null}
+        {"company": "A", "dividendYield": 1.2},
+        {"company": "B", "dividendYield": 0},
+        {"company": "C", "dividendYield": 0.35},
+        {"company": "D", "dividendYield": null},
+        {"company": "E", "dividendYield": null}
     ],
     "2019": [
-        {"company": "蔚来", "dividendYield": 1.34},
-        {"company": "理想", "dividendYield": 0},
-        {"company": "比亚迪", "dividendYield": 0.6},
-        {"company": "零跑", "dividendYield": null},
-        {"company": "小鹏汽车", "dividendYield": null}
+        {"company": "A", "dividendYield": 1.34},
+        {"company": "B", "dividendYield": 0},
+        {"company": "C", "dividendYield": 0.6},
+        {"company": "D", "dividendYield": null},
+        {"company": "E", "dividendYield": null}
     ],
     "2020": [
-        {"company": "蔚来", "dividendYield": 0.69},
-        {"company": "理想", "dividendYield": 0},
-        {"company": "比亚迪", "dividendYield": 0.03},
-        {"company": "零跑", "dividendYield": null},
-        {"company": "小鹏汽车", "dividendYield": null}
+        {"company": "A", "dividendYield": 0.69},
+        {"company": "B", "dividendYield": 0},
+        {"company": "C", "dividendYield": 0.03},
+        {"company": "D", "dividendYield": null},
+        {"company": "E", "dividendYield": null}
     ],
     "2021": [
-        {"company": "蔚来", "dividendYield": 0.6},
-        {"company": "理想", "dividendYield": 0},
-        {"company": "比亚迪", "dividendYield": 0.07},
-        {"company": "零跑", "dividendYield": null},
-        {"company": "小鹏汽车", "dividendYield": null}
+        {"company": "A", "dividendYield": 0.6},
+        {"company": "B", "dividendYield": 0},
+        {"company": "C", "dividendYield": 0.07},
+        {"company": "D", "dividendYield": null},
+        {"company": "E", "dividendYield": null}
     ],
     "2022": [
-        {"company": "蔚来", "dividendYield": 0.65},
-        {"company": "理想", "dividendYield": 0},
-        {"company": "比亚迪", "dividendYield": 0.06},
-        {"company": "零跑", "dividendYield": null},
-        {"company": "小鹏汽车", "dividendYield": null}
+        {"company": "A", "dividendYield": 0.65},
+        {"company": "B", "dividendYield": 0},
+        {"company": "C", "dividendYield": 0.06},
+        {"company": "D", "dividendYield": null},
+        {"company": "E", "dividendYield": null}
     ],
     "2023": [
-        {"company": "理想", "dividendYield": 0},
-        {"company": "蔚来", "dividendYield": null},
-        {"company": "比亚迪", "dividendYield": null},
-        {"company": "零跑", "dividendYield": null},
-        {"company": "小鹏汽车", "dividendYield": null}
+        {"company": "B", "dividendYield": 0},
+        {"company": "A", "dividendYield": null},
+        {"company": "C", "dividendYield": null},
+        {"company": "D", "dividendYield": null},
+        {"company": "E", "dividendYield": null}
     ]
 }

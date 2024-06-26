@@ -1,44 +1,44 @@
 {
     "2018": [
-        {"company": "蔚来", "debtToAssetRatio": "1.76"},
-        {"company": "理想", "debtToAssetRatio": ""},
-        {"company": "比亚迪", "debtToAssetRatio": "0.69"},
-        {"company": "零跑", "debtToAssetRatio": ""},
-        {"company": "小鹏汽车", "debtToAssetRatio": "1.28"}
+        {"company": "A", "debtToAssetRatio": "1.76"},
+        {"company": "B", "debtToAssetRatio": ""},
+        {"company": "C", "debtToAssetRatio": "0.69"},
+        {"company": "D", "debtToAssetRatio": ""},
+        {"company": "E", "debtToAssetRatio": "1.28"}
     ],
     "2019": [
-        {"company": "蔚来", "debtToAssetRatio": "1.31"},
-        {"company": "理想", "debtToAssetRatio": "0.52"},
-        {"company": "比亚迪", "debtToAssetRatio": "0.68"},
-        {"company": "零跑", "debtToAssetRatio": "1.5"},
-        {"company": "小鹏汽车", "debtToAssetRatio": "1.74"}
+        {"company": "A", "debtToAssetRatio": "1.31"},
+        {"company": "B", "debtToAssetRatio": "0.52"},
+        {"company": "C", "debtToAssetRatio": "0.68"},
+        {"company": "D", "debtToAssetRatio": "1.5"},
+        {"company": "E", "debtToAssetRatio": "1.74"}
     ],
     "2020": [
-        {"company": "蔚来", "debtToAssetRatio": "0.41"},
-        {"company": "理想", "debtToAssetRatio": "0.18"},
-        {"company": "比亚迪", "debtToAssetRatio": "0.68"},
-        {"company": "零跑", "debtToAssetRatio": "1.17"},
-        {"company": "小鹏汽车", "debtToAssetRatio": "0.23"}
+        {"company": "A", "debtToAssetRatio": "0.41"},
+        {"company": "B", "debtToAssetRatio": "0.18"},
+        {"company": "C", "debtToAssetRatio": "0.68"},
+        {"company": "D", "debtToAssetRatio": "1.17"},
+        {"company": "E", "debtToAssetRatio": "0.23"}
     ],
     "2021": [
-        {"company": "蔚来", "debtToAssetRatio": "0.54"},
-        {"company": "理想", "debtToAssetRatio": "0.34"},
-        {"company": "比亚迪", "debtToAssetRatio": "0.65"},
-        {"company": "零跑", "debtToAssetRatio": "0.42"},
-        {"company": "小鹏汽车", "debtToAssetRatio": "0.36"}
+        {"company": "A", "debtToAssetRatio": "0.54"},
+        {"company": "B", "debtToAssetRatio": "0.34"},
+        {"company": "C", "debtToAssetRatio": "0.65"},
+        {"company": "D", "debtToAssetRatio": "0.42"},
+        {"company": "E", "debtToAssetRatio": "0.36"}
     ],
     "2022": [
-        {"company": "蔚来", "debtToAssetRatio": "0.71"},
-        {"company": "理想", "debtToAssetRatio": "0.48"},
-        {"company": "比亚迪", "debtToAssetRatio": "0.75"},
-        {"company": "零跑", "debtToAssetRatio": "0.57"},
-        {"company": "小鹏汽车", "debtToAssetRatio": "0.48"}
+        {"company": "A", "debtToAssetRatio": "0.71"},
+        {"company": "B", "debtToAssetRatio": "0.48"},
+        {"company": "C", "debtToAssetRatio": "0.75"},
+        {"company": "D", "debtToAssetRatio": "0.57"},
+        {"company": "E", "debtToAssetRatio": "0.48"}
     ],
     "2023": [
-        {"company": "蔚来", "debtToAssetRatio": ""},
-        {"company": "理想", "debtToAssetRatio": "0.58"},
-        {"company": "比亚迪", "debtToAssetRatio": ""},
-        {"company": "零跑", "debtToAssetRatio": ""},
-        {"company": "小鹏汽车", "debtToAssetRatio": ""}
+        {"company": "A", "debtToAssetRatio": ""},
+        {"company": "B", "debtToAssetRatio": "0.58"},
+        {"company": "C", "debtToAssetRatio": ""},
+        {"company": "D", "debtToAssetRatio": ""},
+        {"company": "E", "debtToAssetRatio": ""}
     ]
 }

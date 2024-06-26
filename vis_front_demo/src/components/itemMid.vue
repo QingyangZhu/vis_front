@@ -23,8 +23,8 @@ export default {
     const echarts = inject('echarts');
     const axios = inject('axios');
     const chartInstance = ref(null);
-    const companies = ['蔚来', '理想', '比亚迪', '零跑', '小鹏汽车'];
-    const currentCompany = ref('蔚来');
+    const companies = ['A', 'B', 'C', 'D', 'E'];
+    const currentCompany = ref('A');
 
     const getData = async () => {
       const response = await axios.get('/five/data');

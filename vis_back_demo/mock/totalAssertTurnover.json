@@ -1,44 +1,44 @@
 {
     "2018": [
-        {"company": "蔚来", "totalAssetTurnover": "0.09"},
-        {"company": "理想", "totalAssetTurnover": ""},
-        {"company": "比亚迪", "totalAssetTurnover": "0.63"},
-        {"company": "零跑", "totalAssetTurnover": ""},
-        {"company": "小鹏汽车", "totalAssetTurnover": "0.12"}
+        {"company": "A", "totalAssetTurnover": "0.09"},
+        {"company": "B", "totalAssetTurnover": ""},
+        {"company": "C", "totalAssetTurnover": "0.63"},
+        {"company": "D", "totalAssetTurnover": ""},
+        {"company": "E", "totalAssetTurnover": "0.12"}
     ],
     "2019": [
-        {"company": "蔚来", "totalAssetTurnover": "0.28"},
-        {"company": "理想", "totalAssetTurnover": "0.11"},
-        {"company": "比亚迪", "totalAssetTurnover": "0.54"},
-        {"company": "零跑", "totalAssetTurnover": "0.05"},
-        {"company": "小鹏汽车", "totalAssetTurnover": "0.14"}
+        {"company": "A", "totalAssetTurnover": "0.28"},
+        {"company": "B", "totalAssetTurnover": "0.11"},
+        {"company": "C", "totalAssetTurnover": "0.54"},
+        {"company": "D", "totalAssetTurnover": "0.05"},
+        {"company": "E", "totalAssetTurnover": "0.14"}
     ],
     "2020": [
-        {"company": "蔚来", "totalAssetTurnover": "0.33"},
-        {"company": "理想", "totalAssetTurnover": "0.25"},
-        {"company": "比亚迪", "totalAssetTurnover": "0.51"},
-        {"company": "零跑", "totalAssetTurnover": "0.09"},
-        {"company": "小鹏汽车", "totalAssetTurnover": "0.21"}
+        {"company": "A", "totalAssetTurnover": "0.33"},
+        {"company": "B", "totalAssetTurnover": "0.25"},
+        {"company": "C", "totalAssetTurnover": "0.51"},
+        {"company": "D", "totalAssetTurnover": "0.09"},
+        {"company": "E", "totalAssetTurnover": "0.21"}
     ],
     "2021": [
-        {"company": "蔚来", "totalAssetTurnover": "0.45"},
-        {"company": "理想", "totalAssetTurnover": "0.53"},
-        {"company": "比亚迪", "totalAssetTurnover": "0.61"},
-        {"company": "零跑", "totalAssetTurnover": "0.45"},
-        {"company": "小鹏汽车", "totalAssetTurnover": "0.35"}
+        {"company": "A", "totalAssetTurnover": "0.45"},
+        {"company": "B", "totalAssetTurnover": "0.53"},
+        {"company": "C", "totalAssetTurnover": "0.61"},
+        {"company": "D", "totalAssetTurnover": "0.45"},
+        {"company": "E", "totalAssetTurnover": "0.35"}
     ],
     "2022": [
-        {"company": "蔚来", "totalAssetTurnover": "0.54"},
-        {"company": "理想", "totalAssetTurnover": "0.72"},
-        {"company": "比亚迪", "totalAssetTurnover": "0.83"},
-        {"company": "零跑", "totalAssetTurnover": "0.76"},
-        {"company": "小鹏汽车", "totalAssetTurnover": "0.61"}
+        {"company": "A", "totalAssetTurnover": "0.54"},
+        {"company": "B", "totalAssetTurnover": "0.72"},
+        {"company": "C", "totalAssetTurnover": "0.83"},
+        {"company": "D", "totalAssetTurnover": "0.76"},
+        {"company": "E", "totalAssetTurnover": "0.61"}
     ],
     "2023": [
-        {"company": "蔚来", "totalAssetTurnover": ""},
-        {"company": "理想", "totalAssetTurnover": "0.62"},
-        {"company": "比亚迪", "totalAssetTurnover": ""},
-        {"company": "零跑", "totalAssetTurnover": ""},
-        {"company": "小鹏汽车", "totalAssetTurnover": ""}
+        {"company": "A", "totalAssetTurnover": ""},
+        {"company": "B", "totalAssetTurnover": "0.62"},
+        {"company": "C", "totalAssetTurnover": ""},
+        {"company": "D", "totalAssetTurnover": ""},
+        {"company": "E", "totalAssetTurnover": ""}
     ]
 }

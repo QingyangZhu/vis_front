@@ -16,8 +16,8 @@
       const $echarts = inject("echarts");
       const $http = inject("axios");
   
-      const selectedCompany = ref('蔚来');
-      const companies = ['蔚来', '理想', '比亚迪', '零跑', '小鹏汽车'];
+      const selectedCompany = ref('A');
+      const companies = ['A', 'B', 'C', 'D', 'E'];
   
       const financeData = reactive({
         TARData: [],

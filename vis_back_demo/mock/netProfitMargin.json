@@ -1,44 +1,44 @@
 {
     "2018": [
-        {"company": "蔚来", "netProfitMargin": "-195.12"},
-        {"company": "理想", "netProfitMargin": ""},
-        {"company": "比亚迪", "netProfitMargin": "2.14"},
-        {"company": "零跑", "netProfitMargin": ""},
-        {"company": "小鹏汽车", "netProfitMargin": "-14411.94"}
+        {"company": "A", "netProfitMargin": "-195.12"},
+        {"company": "B", "netProfitMargin": ""},
+        {"company": "C", "netProfitMargin": "2.14"},
+        {"company": "D", "netProfitMargin": ""},
+        {"company": "E", "netProfitMargin": "-14411.94"}
     ],
     "2019": [
-        {"company": "蔚来", "netProfitMargin": "-145.86"},
-        {"company": "理想", "netProfitMargin": "-857.53"},
-        {"company": "比亚迪", "netProfitMargin": "1.26"},
-        {"company": "零跑", "netProfitMargin": "-770.44"},
-        {"company": "小鹏汽车", "netProfitMargin": "-159.04"}
+        {"company": "A", "netProfitMargin": "-145.86"},
+        {"company": "B", "netProfitMargin": "-857.53"},
+        {"company": "C", "netProfitMargin": "1.26"},
+        {"company": "D", "netProfitMargin": "-770.44"},
+        {"company": "E", "netProfitMargin": "-159.04"}
     ],
     "2020": [
-        {"company": "蔚来", "netProfitMargin": "-34.51"},
-        {"company": "理想", "netProfitMargin": "-1.6"},
-        {"company": "比亚迪", "netProfitMargin": "2.7"},
-        {"company": "零跑", "netProfitMargin": "-174.26"},
-        {"company": "小鹏汽车", "netProfitMargin": "-46.75"}
+        {"company": "A", "netProfitMargin": "-34.51"},
+        {"company": "B", "netProfitMargin": "-1.6"},
+        {"company": "C", "netProfitMargin": "2.7"},
+        {"company": "D", "netProfitMargin": "-174.26"},
+        {"company": "E", "netProfitMargin": "-46.75"}
     ],
     "2021": [
-        {"company": "蔚来", "netProfitMargin": "-29.26"},
-        {"company": "理想", "netProfitMargin": "-1.19"},
-        {"company": "比亚迪", "netProfitMargin": "1.41"},
-        {"company": "零跑", "netProfitMargin": "-90.86"},
-        {"company": "小鹏汽车", "netProfitMargin": "-23.17"}
+        {"company": "A", "netProfitMargin": "-29.26"},
+        {"company": "B", "netProfitMargin": "-1.19"},
+        {"company": "C", "netProfitMargin": "1.41"},
+        {"company": "D", "netProfitMargin": "-90.86"},
+        {"company": "E", "netProfitMargin": "-23.17"}
     ],
     "2022": [
-        {"company": "蔚来", "netProfitMargin": "-29.55"},
-        {"company": "理想", "netProfitMargin": "-4.44"},
-        {"company": "比亚迪", "netProfitMargin": "3.92"},
-        {"company": "零跑", "netProfitMargin": "-41.25"},
-        {"company": "小鹏汽车", "netProfitMargin": "-34.03"}
+        {"company": "A", "netProfitMargin": "-29.55"},
+        {"company": "B", "netProfitMargin": "-4.44"},
+        {"company": "C", "netProfitMargin": "3.92"},
+        {"company": "D", "netProfitMargin": "-41.25"},
+        {"company": "E", "netProfitMargin": "-34.03"}
     ],
     "2023": [
-        {"company": "蔚来", "netProfitMargin": ""},
-        {"company": "理想", "netProfitMargin": "9.45"},
-        {"company": "比亚迪", "netProfitMargin": ""},
-        {"company": "零跑", "netProfitMargin": ""},
-        {"company": "小鹏汽车", "netProfitMargin": ""}
+        {"company": "A", "netProfitMargin": ""},
+        {"company": "B", "netProfitMargin": "9.45"},
+        {"company": "C", "netProfitMargin": ""},
+        {"company": "D", "netProfitMargin": ""},
+        {"company": "E", "netProfitMargin": ""}
     ]
 }

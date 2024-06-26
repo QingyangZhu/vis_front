@@ -1,44 +1,44 @@
 {
     "2018": [
-        {"company": "蔚来", "priceBookRatio": 6.74},
-        {"company": "理想", "priceBookRatio": null},
-        {"company": "比亚迪", "priceBookRatio": 2.17},
-        {"company": "零跑", "priceBookRatio": null},
-        {"company": "小鹏汽车", "priceBookRatio": null}
+        {"company": "A", "priceBookRatio": 6.74},
+        {"company": "B", "priceBookRatio": null},
+        {"company": "C", "priceBookRatio": 2.17},
+        {"company": "D", "priceBookRatio": null},
+        {"company": "E", "priceBookRatio": null}
     ],
     "2019": [
-        {"company": "蔚来", "priceBookRatio": null},
-        {"company": "理想", "priceBookRatio": null},
-        {"company": "比亚迪", "priceBookRatio": 1.68},
-        {"company": "零跑", "priceBookRatio": null},
-        {"company": "小鹏汽车", "priceBookRatio": null}
+        {"company": "A", "priceBookRatio": null},
+        {"company": "B", "priceBookRatio": null},
+        {"company": "C", "priceBookRatio": 1.68},
+        {"company": "D", "priceBookRatio": null},
+        {"company": "E", "priceBookRatio": null}
     ],
     "2020": [
-        {"company": "蔚来", "priceBookRatio": 17.91},
-        {"company": "理想", "priceBookRatio": null},
-        {"company": "比亚迪", "priceBookRatio": 8.22},
-        {"company": "零跑", "priceBookRatio": null},
-        {"company": "小鹏汽车", "priceBookRatio": null}
+        {"company": "A", "priceBookRatio": 17.91},
+        {"company": "B", "priceBookRatio": null},
+        {"company": "C", "priceBookRatio": 8.22},
+        {"company": "D", "priceBookRatio": null},
+        {"company": "E", "priceBookRatio": null}
     ],
     "2021": [
-        {"company": "蔚来", "priceBookRatio": 9.84},
-        {"company": "理想", "priceBookRatio": 4.7},
-        {"company": "比亚迪", "priceBookRatio": 6.67},
-        {"company": "零跑", "priceBookRatio": null},
-        {"company": "小鹏汽车", "priceBookRatio": 6.14}
+        {"company": "A", "priceBookRatio": 9.84},
+        {"company": "B", "priceBookRatio": 4.7},
+        {"company": "C", "priceBookRatio": 6.67},
+        {"company": "D", "priceBookRatio": null},
+        {"company": "E", "priceBookRatio": 6.14}
     ],
     "2022": [
-        {"company": "蔚来", "priceBookRatio": 4.9},
-        {"company": "理想", "priceBookRatio": 3},
-        {"company": "比亚迪", "priceBookRatio": 4.52},
-        {"company": "零跑", "priceBookRatio": 3.74},
-        {"company": "小鹏汽车", "priceBookRatio": 1.6}
+        {"company": "A", "priceBookRatio": 4.9},
+        {"company": "B", "priceBookRatio": 3},
+        {"company": "C", "priceBookRatio": 4.52},
+        {"company": "D", "priceBookRatio": 3.74},
+        {"company": "E", "priceBookRatio": 1.6}
     ],
     "2023": [
-        {"company": "理想", "priceBookRatio": 4.48},
-        {"company": "蔚来", "priceBookRatio": null},
-        {"company": "比亚迪", "priceBookRatio": null},
-        {"company": "零跑", "priceBookRatio": null},
-        {"company": "小鹏汽车", "priceBookRatio": null}
+        {"company": "B", "priceBookRatio": 4.48},
+        {"company": "A", "priceBookRatio": null},
+        {"company": "C", "priceBookRatio": null},
+        {"company": "D", "priceBookRatio": null},
+        {"company": "E", "priceBookRatio": null}
     ]
 }

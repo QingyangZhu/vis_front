@@ -30,11 +30,11 @@ CREATE TABLE `companies`  (
 -- ----------------------------
 -- Records of companies
 -- ----------------------------
-INSERT INTO `companies` VALUES (1, '蔚来');
-INSERT INTO `companies` VALUES (2, '理想');
-INSERT INTO `companies` VALUES (3, '比亚迪');
-INSERT INTO `companies` VALUES (4, '零跑');
-INSERT INTO `companies` VALUES (5, '小鹏汽车');
+INSERT INTO `companies` VALUES (1, 'A');
+INSERT INTO `companies` VALUES (2, 'B');
+INSERT INTO `companies` VALUES (3, 'C');
+INSERT INTO `companies` VALUES (4, 'D');
+INSERT INTO `companies` VALUES (5, 'E');
 
 -- ----------------------------
 -- Table structure for company_financial_data

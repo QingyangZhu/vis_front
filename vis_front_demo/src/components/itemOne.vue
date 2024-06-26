@@ -20,7 +20,7 @@ export default {
     });
 
     function setData() {
-      const companies = ["蔚来", "理想", "比亚迪", "零跑", "小鹏汽车"];
+      const companies = ["A", "B", "C", "D", "E"];
       const years = ["2018", "2019", "2020", "2021", "2022", "2023"];
       chartData.years = years;
 
@@ -53,7 +53,7 @@ export default {
             }
           },
           legend: {
-            data: ["蔚来", "理想", "比亚迪", "零跑", "小鹏汽车"],
+            data: ["A", "B", "C", "D", "E"],
             textStyle: {
               color: '#fff'
             }
