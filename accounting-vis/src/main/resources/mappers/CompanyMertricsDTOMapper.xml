@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.vis.accountingvis.mapper.CompanyMetricsDTOMapper">
+    <select id="getCompanyMetricsByCompanyName" resultType="com.vis.accountingvis.dto.CompanyMetricsDTO">
+        SELECT
+            c.company_name AS companyName,
+            cfd.year AS year,
+            MAX(CASE WHEN fi.indicator_name = '市盈率' THEN cfd.financial_data_value END) AS peRatio,
+            MAX(CASE WHEN fi.indicator_name = '市净率' THEN cfd.financial_data_value END) AS pbRatio,
+            MAX(CASE WHEN fi.indicator_name = '市销率' THEN cfd.financial_data_value END) AS psRatio,
+            MAX(CASE WHEN fi.indicator_name = '股息率' THEN cfd.financial_data_value END) AS dividendYield
+        FROM company_financial_data cfd
+                 JOIN companies c ON cfd.company_id = c.company_id
+                 JOIN financial_indicators fi ON cfd.indicator_id = fi.indicator_id
+        WHERE c.company_name = #{company}
+        GROUP BY cfd.year
+        ORDER BY cfd.year
+    </select>
+</mapper>

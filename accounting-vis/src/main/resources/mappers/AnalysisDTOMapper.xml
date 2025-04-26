@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.vis.accountingvis.mapper.AnalysisDTOMapper">
+    <select id="getFinancialAnalysis" resultType="com.vis.accountingvis.dto.AnalysisDTO">
+        SELECT
+            c.company_name AS companyName,
+            cfd.year AS year,
+            fi.indicator_name AS indicatorName,
+            cfd.financial_data_value AS value
+        FROM
+            company_financial_data cfd
+                LEFT JOIN companies c ON cfd.company_id = c.company_id
+                LEFT JOIN financial_indicators fi ON cfd.indicator_id = fi.indicator_id
+        WHERE
+            fi.indicator_name = #{indicatorName}
+        ORDER BY
+            c.company_name, cfd.year
+    </select>
+</mapper>
