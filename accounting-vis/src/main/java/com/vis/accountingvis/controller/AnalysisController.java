@@ -4,7 +4,6 @@ import com.vis.accountingvis.dto.AnalysisDTO;
 import com.vis.accountingvis.mapper.AnalysisDTOMapper;
 
 
-import com.vis.accountingvis.mapper.CompanyMetricsDTOMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -37,4 +36,16 @@ public class AnalysisController {
     public List<AnalysisDTO> getRoeData() {
         return analysisDTOMapper.getFinancialAnalysis("净资产收益率");
     }
+
+    @GetMapping("/profit-margin")
+    public List<AnalysisDTO> getProfitMarginData() {
+        return analysisDTOMapper.getFinancialAnalysis("净利率");
+    }
+
+    @GetMapping("/roa")
+    public List<AnalysisDTO> getRoaData() {
+        return analysisDTOMapper.getFinancialAnalysis("总资产报酬率");
+    }
+
+
 }

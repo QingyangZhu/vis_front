@@ -1,30 +1,29 @@
 <template>
   <div id="app">
-    <!-- 路由出口 -->
     <router-view></router-view>
   </div>
 </template>
 
 <style>
-/* 全局样式重置 */
 html, body {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden; /* 防止滚动条出现 */
+  overflow: hidden;
+  box-sizing: border-box; /* 确保所有元素的大小都包括 padding 和 border */
 }
 
-/* 主容器 */
 #app {
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;   /* 垂直居中 */
+  align-items: center;       /* 水平居中 */
+  width: 100%;
+  height: 100vh;             /* 高度占满视口 */
+  position: relative;
 }
 
-/* 背景图片设置 */
 #app::before {
   content: '';
   position: fixed;
@@ -32,9 +31,10 @@ html, body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('@/assets/background.png') no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  url('@/assets/background.png') no-repeat center center;
   background-size: cover;
-  z-index: -1; /* 将背景置于底层 */
+  z-index: -2; /* 确保背景在最底层 */
 }
 
 </style>

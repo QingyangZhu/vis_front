@@ -1,10 +1,12 @@
 <template>
   <div class="module" @mouseover="handleMouseOver" @mouseleave="handleMouseLeave">
     <div class="select-wrapper">
-      <select v-model="selectedCompany" class="custom-select" @change="fetchData" :disabled="loading">
-        <option v-for="company in companyList" :value="company.companyName">{{ company.companyName }}</option>
+      <label>选择分析指标：</label>
+      <select v-model="selectedIndicator" class="custom-select" @change="handleIndicatorChange" :disabled="loading">
+        <option v-for="indicator in indicators" :key="indicator" :value="indicator">
+          {{ indicatorMap[indicator] || indicator }}
+        </option>
       </select>
-      <h2 class="legend">市盈率、市净率、市销率、股息率</h2>
     </div>
 
     <div v-if="loading" class="status-container loading">
@@ -24,22 +26,23 @@ import { ref, onMounted, onBeforeUnmount, nextTick } from 'vue'
 import axios from 'axios'
 import * as echarts from 'echarts'
 
-const selectedCompany = ref('')
-const companyList = ref([])
 const chart = ref(null)
 const myChart = ref(null)
 const loading = ref(false)
 const error = ref('')
-
-const api = axios.create({
-  baseURL: '/api/',
-  timeout: 10000
-})
+const selectedIndicator = ref('liquidity-ratio')
+const indicators = ref(['liquidity-ratio', 'current-ratio', 'roe'])
+const indicatorMap = {
+  'liquidity-ratio': '流动比率',
+  'current-ratio': '速动比率',
+  'roe': '净资产收益率'
+}
 
 onMounted(async () => {
   await nextTick()
   initChart()
-  await fetchCompanies()
+  fetchData()
+  myChart.value?.resize()
 })
 
 onBeforeUnmount(() => {
@@ -56,65 +59,51 @@ const handleResize = () => {
   myChart?.resize()
 }
 
-const fetchCompanies = async () => {
-  try {
-    loading.value = true
-    const response = await api.get('/companies')
-    companyList.value = response.data
-    if (companyList.value.length > 0) {
-      selectedCompany.value = companyList.value[0].companyName
-      await fetchData()
-    }
-  } catch (err) {
-    handleError(err, '获取公司列表失败')
-  } finally {
-    loading.value = false
-  }
+const handleIndicatorChange = () => {
+  fetchData()
 }
 
 const fetchData = async () => {
   try {
     loading.value = true
     error.value = ''
-    const response = await api.get('/company-metrics/search', { params: { name: selectedCompany.value } })
-    processMetrics(response.data)
+    const response = await axios.get(`/api/analysis/${selectedIndicator.value}`)
+    processData(response.data)
   } catch (err) {
-    handleError(err, '获取财务指标失败')
+    handleError(err)
   } finally {
     loading.value = false
   }
 }
 
-const processMetrics = (rawData) => {
+const processData = (rawData) => {
   if (!rawData || rawData.length === 0) {
     error.value = '暂无相关数据'
-    myChart?.clear()
+    myChart.value?.clear()
     return
   }
 
-  const years = rawData.map(item => item.year.toString())
-  const metrics = ['peRatio', 'pbRatio', 'psRatio', 'dividendYield']
-  const chineseNames = {
-    peRatio: '市盈率',
-    pbRatio: '市净率',
-    psRatio: '市销率',
-    dividendYield: '股息率'
-  }
+  const companies = [...new Set(rawData.map(item => item.companyName))]
+  const years = [...new Set(rawData.map(item => item.year))].sort((a, b) => a - b)
 
-  const series = metrics.map(metric => ({
-    name: chineseNames[metric],
+  const seriesData = companies.map(company => ({
+    name: company,
     type: 'line',
     smooth: true,
     symbol: 'circle',
     symbolSize: 8,
-    data: rawData.map(item => item[metric] !== null ? Number(item[metric]).toFixed(2) : null)
+    data: years.map(year => {
+      const record = rawData.find(d => d.companyName === company && d.year === year)
+      return record ? Number(record.value).toFixed(2) : null
+    })
   }))
 
   const option = {
     color: ['#4e79a7', '#f28e2c', '#e15759', '#76b7b2'],
     backgroundColor: 'transparent',
     title: {
-      text: selectedCompany.value,
+      text: `${indicatorMap[selectedIndicator.value]}趋势分析`,
+      left: 'center',
       textStyle: { fontSize: 18, fontWeight: 'bold', color: '#fff' }
     },
     tooltip: {
@@ -123,9 +112,13 @@ const processMetrics = (rawData) => {
       textStyle: { color: '#fff' }
     },
     legend: {
-      data: Object.values(chineseNames),
-      top: 30,
+      data: companies,
+      top: 40,
       textStyle: { color: '#ddd' }
+    },
+    grid: {
+      top: 100,
+      containLabel: true
     },
     xAxis: {
       type: 'category',
@@ -135,19 +128,20 @@ const processMetrics = (rawData) => {
     },
     yAxis: {
       type: 'value',
+      name: indicatorMap[selectedIndicator.value],
       axisLabel: { color: '#ddd' },
       splitLine: { lineStyle: { color: 'rgba(255,255,255,0.1)' } }
     },
-    series,
+    series: seriesData,
     dataZoom: [{ type: 'inside', start: 0, end: 100 }]
   }
 
   myChart.value.setOption(option, true)
 }
 
-const handleError = (err, message) => {
-  console.error(message, err)
-  error.value = `${message}: ${err.response?.data?.message || err.message}`
+const handleError = (error) => {
+  console.error('数据获取失败:', error)
+  error.value = `数据加载失败: ${error.response?.data?.message || error.message}`
   myChart?.clear()
 }
 
@@ -160,5 +154,6 @@ const handleMouseLeave = () => {
 </script>
 
 <style scoped>
+/* 统一模块、状态提示、选择器样式 */
 @import '@/styles/module-common.css';
 </style>
