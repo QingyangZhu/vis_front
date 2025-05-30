@@ -2,11 +2,6 @@
   <div class="chat-window" @mouseover="handleMouseOver" @mouseleave="handleMouseLeave">
     <div class="chat-header">
       <h2>AI助手</h2>
-      <select v-model="selectedRole" class="role-select">
-        <option value="finance">财务专家</option>
-        <option value="investment">投资顾问</option>
-        <option value="business">商业分析师</option>
-      </select>
     </div>
 
     <div ref="chatBox" class="chat-box">
