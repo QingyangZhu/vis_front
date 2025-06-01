@@ -26,7 +26,7 @@ import { ref, onMounted, onBeforeUnmount, nextTick } from 'vue'
 import axios from 'axios'
 import * as echarts from 'echarts'
 
-// 状态
+// 状态变量
 const chart = ref(null)
 const myChart = ref(null)
 const loading = ref(false)
@@ -36,10 +36,10 @@ const selectedMetric = ref('销售增长率')
 const metrics = ['销售增长率', '净利润增长率', '总资产增长率']
 
 const years = ['2018', '2019', '2020', '2021', '2022', '2023']
-const companies = ref([]) // 公司列表
-const financialData = ref({}) // 财务数据
+const companies = ref([])
+const financialData = ref({})
 
-// 生命周期
+// 生命周期钩子
 onMounted(async () => {
   await nextTick()
   initChart()
@@ -49,7 +49,7 @@ onMounted(async () => {
 
 onBeforeUnmount(() => {
   window.removeEventListener('resize', handleResize)
-  myChart?.dispose()
+  myChart.value?.dispose()
 })
 
 const initChart = () => {
@@ -58,7 +58,7 @@ const initChart = () => {
 }
 
 const handleResize = () => {
-  myChart?.resize()
+  myChart.value?.resize()
 }
 
 const handleMouseOver = () => {
@@ -158,7 +158,7 @@ const updateChart = () => {
       top: 30,
       textStyle: { color: '#ddd' }
     },
-    grid: { top: 100, bottom: 80, left: 60, right: 60 },
+    grid: { top: 100, bottom: 120, left: 60, right: 60 },
     xAxis: {
       type: 'category',
       boundaryGap: false,
@@ -172,10 +172,51 @@ const updateChart = () => {
       axisLine: { lineStyle: { color: '#888' } },
       splitLine: { lineStyle: { color: 'rgba(255,255,255,0.1)' } }
     },
+    brush: {
+      toolbox: ['rect', 'polygon', 'lineX', 'lineY', 'keep', 'clear'],
+      xAxisIndex: 0
+    },
+    toolbox: {
+      feature: {
+        brush: {
+          type: ['rect', 'polygon', 'lineX', 'lineY', 'keep', 'clear']
+        },
+        dataView: {},
+        restore: {}
+      },
+      right: '10%',
+      top: 'bottom'
+    },
     series: seriesData
   }
 
   myChart.value.setOption(option, true)
+
+  // 设置 brush 选中监听器
+  myChart.value.off('brushSelected') // 避免重复绑定
+  myChart.value.on('brushSelected', function (params) {
+    const brushed = []
+    const brushComponent = params.batch[0]
+    for (let sIdx = 0; sIdx < brushComponent.selected.length; sIdx++) {
+      const rawIndices = brushComponent.selected[sIdx].dataIndex
+      if (rawIndices && rawIndices.length) {
+        brushed.push(`[系列 ${companies.value[sIdx] || sIdx}] ${rawIndices.join(', ')}`)
+      }
+    }
+    myChart.value.setOption({
+      title: {
+        backgroundColor: '#333',
+        text: `选中数据索引：\n${brushed.join('\n')}`,
+        bottom: 0,
+        right: '10%',
+        width: 150,
+        textStyle: {
+          fontSize: 12,
+          color: '#fff'
+        }
+      }
+    })
+  })
 }
 
 // 错误处理
