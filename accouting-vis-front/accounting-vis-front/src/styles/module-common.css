@@ -54,3 +54,11 @@
 .status-container.error {
     background: rgba(255, 0, 0, 0.7);
 }
+
+label{
+    color: white;
+}
+
+h2{
+    color: white;
+}

@@ -214,4 +214,7 @@ button:disabled {
   margin-top: 10px;
   color: #666;
 }
+h2{
+color: white;
+}
 </style>

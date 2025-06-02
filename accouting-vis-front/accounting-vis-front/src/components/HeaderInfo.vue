@@ -17,4 +17,7 @@ header {
   text-align: center;
   height: 60px; /* 设置你想要的高度，例如60px */
 }
+h1 {
+  color: white; /* 设置字体颜色为白色 */
+}
 </style>
