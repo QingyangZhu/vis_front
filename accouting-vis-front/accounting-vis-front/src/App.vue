@@ -8,8 +8,8 @@
 // 如果之前有 setup 内容，保留它
 </script>
 
+/* src/App.vue */
 <style>
-/* 全局基础重置 */
 html, body {
   margin: 0;
   padding: 0;
@@ -24,23 +24,19 @@ html, body {
 #app {
   width: 100%;
   height: 100%;
-  position: relative; /* 保持 relative 以便伪元素定位 */
+  /* 移除 display: flex 和相关的居中属性，这些应由 VisView 自己处理 */
+  /* 移除 ::before 的背景，这个也应由 VisView 自己处理 */
 }
 
-/* 可视化大屏特定样式 (当 body 有 .vis-active 类时) */
+/* VisView 特有样式应该在 VisView.vue 中或通过 body.vis-active 控制 */
 body.vis-active {
   overflow: hidden; /* 大屏通常不需要滚动条 */
 }
-
-#app:has(> .vis-view-wrapper), /* 如果 VisView 有一个特定的包装器类 */
-body.vis-active #app { /* 或者通过 body 类来控制 */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+body.vis-active #app {
+  /* 如果 VisView 需要 flex 居中，在这里或 VisView.vue 内部实现 */
+  /* 例如，VisView.vue 的根元素可以设置 flex 居中 */
 }
-
-body.vis-active #app::before {
+body.vis-active #app::before { /* 假设这个背景属于 VisView */
   content: '';
   position: fixed;
   top: 0;
@@ -48,25 +44,22 @@ body.vis-active #app::before {
   width: 100%;
   height: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-  url('@/assets/background.png') no-repeat center center; /* 确保路径正确 */
+  url('@/assets/background.png') no-repeat center center;
   background-size: cover;
-  z-index: -2; /* 确保背景在最底层 */
+  z-index: -2;
 }
 
 
-/* 后台管理特定样式 (当 body 有 .admin-active 类时) */
+/* Admin 特有样式 */
 body.admin-active {
   overflow: auto; /* 后台界面可能需要滚动 */
-  background-color: #f0f2f5; /* 后台常用的浅灰色背景, 也可由 AdminLayout 设置 */
+  background-color: #f0f2f5; /* 也可以在 AdminLayout.vue 中设置 */
 }
-
-/* 如果 #app::before 对 admin 页面有干扰，可以隐藏它 */
-body.admin-active #app::before {
+body.admin-active #app::before { /* 确保 VisView 的背景在 admin 模式下不显示 */
   display: none;
 }
-
-/* Admin 模式下 #app 通常不需要 flex 居中 */
+/* Admin 模式下，#app 通常是 display: block (默认) 或其他适合 AdminLayout 的设置 */
 body.admin-active #app {
-  display: block; /* 或者其他适合 admin 布局的 display 属性 */
+  display: block; /* 确保覆盖 VisView 的 flex 设置 */
 }
 </style>

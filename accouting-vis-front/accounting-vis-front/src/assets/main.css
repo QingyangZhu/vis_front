@@ -1,11 +1,27 @@
 @import './base.css';
 
 #app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
+  max-width: 1280px; /* */
+  margin: 0 auto; /* */
+  padding: 2rem; /* */
+  font-weight: normal; /* */
 }
+
+/* 后台管理界面激活时，对 #app 的全局样式覆盖 */
+html.admin-active #app { /* */
+  max-width: none;
+  margin: 0;
+  padding: 0; /* AdminLayout 应自行管理其内边距 */
+}
+
+/* --- 添加下面的代码 --- */
+/* 可视化大屏界面激活时，对 #app 的全局样式覆盖 */
+html.vis-active #app { /* */
+  max-width: none; /* 移除最大宽度限制 */
+  margin: 0;       /* 移除自动外边距，避免居中 */
+  padding: 0;      /* VisView 应自行管理其内边距，如果需要padding */
+}
+/* --- 添加结束 --- */
 
 a,
 .green {
@@ -23,13 +39,37 @@ a,
 
 @media (min-width: 1024px) {
   body {
-    display: flex;
-    place-items: center;
+    display: flex; /* */
+    place-items: center; /* */
   }
 
   #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
+    display: grid; /* */
+    grid-template-columns: 1fr 1fr; /* */
+    padding: 0 2rem; /* */
   }
+
+  /* 后台管理界面激活时的样式覆盖 (大屏幕) */
+  html.admin-active body { /* */
+    display: block;
+  }
+
+  html.admin-active #app { /* */
+    display: block; /* 或 flex, 取决于 AdminLayout.vue 的顶层容器设计 */
+    /* padding 会从全局的 html.admin-active #app (padding:0) 继承 */
+  }
+
+  /* --- 添加下面的代码 --- */
+  /* 可视化大屏界面激活时的样式覆盖 (大屏幕) */
+  html.vis-active body { /* */
+    display: block; /* 重置 body 的 flex 居中 */
+  }
+
+  html.vis-active #app { /* */
+    display: block; /* 或 flex, 取决于 VisView.vue 的顶层容器设计 */
+    /* 这将覆盖 #app 的 grid 布局 */
+    /* padding 会从全局的 html.vis-active #app (padding:0) 继承 */
+    /* 如果 VisView 在大屏幕下需要特定的 padding，可以在这里设置，例如: padding: 1rem; */
+  }
+  /* --- 添加结束 --- */
 }
