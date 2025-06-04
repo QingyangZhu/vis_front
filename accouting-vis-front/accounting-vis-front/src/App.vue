@@ -44,7 +44,7 @@ body.vis-active #app::before { /* 假设这个背景属于 VisView */
   width: 100%;
   height: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-  url('@/assets/background.png') no-repeat center center;
+  url('@/assets/bg_black.png') no-repeat center center;
   background-size: cover;
   z-index: -2;
 }
